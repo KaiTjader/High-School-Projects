@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <script src="index.js" type="text/javascript"></script>
+    <head>
+    <title>Money Converter</title>
+    </head>
+    <body onload="startProgram()">
+        <h1>Money Converter</h1>
+        <input type="text" class="inputValue" id="inputValue" placeholder="Enter starting value">
+        <select class="converterOne" id="converterOne" onchange="updateValue()">
+            <option value="USD">United States Dollar(USD)</option>
+            <option value="EUR">Euro(EUR)</option>
+            <option value="GBP">British Pound(GBP)</option>
+            <option value="CNY">Chinese Yuan(CNY)</option>
+            <option value="Bitcoin">Bitcoin</option>
+        </select>
+        <p>converts to -></p>
+        <select class="converterTwo" id="converterTwo" onchange="updateValue()">
+            <option value="USD">United States Dollar(USD)</option>
+            <option value="EUR">Euro(EUR)</option>
+            <option value="GBP">Pound Sterling(GBP)</option>
+            <option value="CNY">Chinese Yuan(CNY)</option>
+            <option value="Bitcoin">Bitcoin</option>
+        </select>
+        <h2 class="outputValue" id="outputValue">$0 USD converts to $0 USD</h2>
+    </body>
+</html>
